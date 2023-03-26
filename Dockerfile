@@ -12,6 +12,7 @@ RUN npm install
 
 # Build the React application
 RUN npm run build
+$ docker build -t nextjs-todo:1.0 .
 
 # Expose port 3000
 EXPOSE 3000
