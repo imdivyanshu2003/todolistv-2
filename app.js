@@ -131,7 +131,7 @@ app.get("/:customListName", async function (req, res) {
           listTitle: foundList.name,
           newListItems: foundList.items,
         });
-      }
+      
     })
     .catch(function (err) {
       console.log(err);
@@ -142,4 +142,6 @@ app.get("/:customListName", async function (req, res) {
     console.log(`Example app listening on port 3000`);
 
   });
+
+}
 
