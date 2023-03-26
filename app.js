@@ -137,10 +137,9 @@ app.get("/:customListName", async function (req, res) {
       console.log(err);
     });
 }),
-  app.set('port', (process.env.PORT || 3000));
+  app.listen(process.env.PORT || 3000, () => {
 
-app.listen(app.get('port'), function() {
+    console.log(`Example app listening on port 3000`);
 
-    console.log('Server started on port '+app.get('port'));
+  });
 
-});
