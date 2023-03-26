@@ -137,6 +137,6 @@ app.get("/:customListName", async function (req, res) {
       console.log(err);
     });
 }),
-  app.listen(3000, (req, req) => {
+  app.listen(3000, (req, res) => {
     console.log(`Example app listening on port 3000`);
   });
