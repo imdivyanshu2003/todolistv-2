@@ -10,10 +10,6 @@ COPY . /app
 # Install the application dependencies
 RUN npm install
 
-# Build the React application
-
-
-
 # Expose port 3000
 EXPOSE 3000
 
