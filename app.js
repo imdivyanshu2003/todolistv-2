@@ -131,17 +131,12 @@ app.get("/:customListName", async function (req, res) {
           listTitle: foundList.name,
           newListItems: foundList.items,
         });
-      
-
-
+      }
     })
     .catch(function (err) {
       console.log(err);
     });
-});
-  app.set('port', (process.env.PORT || 3000));
-app.listen(app.get('port'), function() {
-    console.log('Server started on port '+app.get('port'));
-});
-
-}
+}),
+  app.listen(3000, () => {
+    console.log(`Example app listening on port 3000`);
+  });
